@@ -1,4 +1,4 @@
-# gis-hub
+# gis-vue
 
 GIS Hub
 
@@ -9,7 +9,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig(({ mode }) => {
   return {
-    base: mode === 'production' ? '/gis-hub/' : './',
+    base: mode === 'production' ? '/gis-vue/' : './',
     resolve: {
       alias: {
         '@': './src',
