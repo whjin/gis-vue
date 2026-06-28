@@ -8,7 +8,7 @@ import vueDevTools from 'vite-plugin-vue-devtools';
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
   return {
-    base: mode === 'production' ? '/gis-vue/' : './',
+    base: mode === 'production' ? '/' : './',
     plugins: [vue(), vueJsx(), vueDevTools()],
     resolve: {
       alias: {

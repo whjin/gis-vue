@@ -1,4 +1,4 @@
-## 部署方式1
+## 部署
 
 ```js
 import { defineConfig } from 'vite';
@@ -25,4 +25,12 @@ npm install gh-pages -D
 
 npm run build
 npm run deploy
+```
+
+`public`文件夹增加 `404.html`
+
+## 路由配置
+
+```js
+history: createWebHistory(import.meta.env.BASE_URL),
 ```
