@@ -1,47 +1,17 @@
-import './style.css';
-import * as THREE from 'three';
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { createApp } from 'vue';
+import { createPinia } from 'pinia';
 
-// 初始化相机、场景、渲染器等
-const camera = new THREE.PerspectiveCamera(
-  30,
-  window.innerWidth / window.innerHeight,
-  1,
-  3000,
-);
-camera.position.set(100, 100, 100);
-camera.lookAt(0, 0, 0);
+import App from './App.vue';
+import router from './router';
+import './styles/style.css';
+import './assets/iconfont/iconfont.css'
+import Icon from './components/Icon.vue';
 
-const scene = new THREE.Scene();
+const app = createApp(App);
 
-// 创建渲染器
-const renderer = new THREE.WebGLRenderer({ antialias: true });
-renderer.setPixelRatio(window.devicePixelRatio);
-renderer.setSize(window.innerWidth, window.innerHeight);
-document.getElementById('webgl').appendChild(renderer.domElement);
+app.use(createPinia());
+app.use(router);
 
-// 创建控制器
-const controls = new OrbitControls(camera, renderer.domElement);
-controls.target.set(0, 0, 0);
-controls.update();
+app.component('Icon', Icon);
 
-// 创建一个简单的立方体
-const geometry = new THREE.BoxGeometry(10, 10, 10);
-const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-const cube = new THREE.Mesh(geometry, material);
-scene.add(cube);
-
-// 动画循环
-function animate() {
-  requestAnimationFrame(animate);
-  controls.update();
-  // 让立方体旋转起来
-  cube.rotation.x += 0.01;
-  cube.rotation.y += 0.01;
-  renderer.render(scene, camera);
-}
-
-animate();
-
-const gridHelper = new THREE.GridHelper(50, 10);
-scene.add(gridHelper);
+app.mount('#app');
