@@ -40,8 +40,8 @@ importers:
         specifier: ^8.0.16
         version: 8.1.0(sass@1.101.0)(yaml@2.9.0)
       vite-plugin-vue-devtools:
-        specifier: ^8.1.2
-        version: 8.1.5(vite@8.1.0(sass@1.101.0)(yaml@2.9.0))(vue@3.5.39)
+        specifier: 8.1.4
+        version: 8.1.4(vite@8.1.0(sass@1.101.0)(yaml@2.9.0))(vue@3.5.39)
 
 packages:
 
@@ -1322,8 +1322,8 @@ packages:
       '@nuxt/kit':
         optional: true
 
-  vite-plugin-vue-devtools@8.1.5:
-    resolution: {integrity: sha512-QSVntSN0sbVV08CZntMWOfF8McyPyYyYd19sChLjxYyFCC7Fcpey74ztw1uCCU23wTmR2yWPb92uaxVD4Lw0Fg==}
+  vite-plugin-vue-devtools@8.1.4:
+    resolution: {integrity: sha512-sKrK1piX0KweFobf967lB4HFze5ADyciIVuIEBHXjE6RBrnthlsEVq7tKz6apOpuqvop4lRrE5vx8D/O1kmJJg==}
     engines: {node: '>=v14.21.3'}
     peerDependencies:
       vite: ^6.0.0 || ^7.0.0 || ^8.0.0
@@ -2592,7 +2592,7 @@ snapshots:
       vite: 8.1.0(sass@1.101.0)(yaml@2.9.0)
       vite-dev-rpc: 2.0.0(vite@8.1.0(sass@1.101.0)(yaml@2.9.0))
 
-  vite-plugin-vue-devtools@8.1.5(vite@8.1.0(sass@1.101.0)(yaml@2.9.0))(vue@3.5.39):
+  vite-plugin-vue-devtools@8.1.4(vite@8.1.0(sass@1.101.0)(yaml@2.9.0))(vue@3.5.39):
     dependencies:
       '@vue/devtools-core': 8.1.5(vue@3.5.39)
       '@vue/devtools-kit': 8.1.5

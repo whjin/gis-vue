@@ -39,9 +39,7 @@ jobs:
             ${{ runner.os }}-pnpm-
 
       - name: Install dependencies
-        run: pnpm install
-        env:
-          PNPM_MINIMUM_RELEASE_AGE: 0
+        run: pnpm install --frozen-lockfile
 
       - name: Build project
         run: pnpm run build
