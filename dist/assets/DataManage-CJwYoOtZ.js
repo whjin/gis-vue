@@ -1,1 +1,0 @@
-import{d as e,h as t}from"./index-Bvw8PuJ9.js";var n={class:`container`},r={__name:`DataManage`,setup(r){return(r,i)=>(t(),e(`div`,n))}};export{r as default};

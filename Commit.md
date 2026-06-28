@@ -1,1 +1,1 @@
-2026-6-28 15:52:06 build: 修改工作流PNPM_MINIMUM_RELEASE_AGE: 0
+2026-6-28 23:48:06 feat: 路由配置增加基础路径 `history: createWebHistory(process.env.BASE_URL)`
