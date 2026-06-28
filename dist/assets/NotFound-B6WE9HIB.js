@@ -1,0 +1,1 @@
+import{d as e,h as t}from"./index-DnY9RCAE.js";var n={class:`container`},r={__name:`NotFound`,setup(r){return(r,i)=>(t(),e(`div`,n))}};export{r as default};
