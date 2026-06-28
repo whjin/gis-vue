@@ -40,6 +40,8 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+        env:
+          PNPM_MINIMUM_RELEASE_AGE: 0
 
       - name: Build project
         run: pnpm run build
