@@ -1,7 +1,3 @@
-# gis-hub
-
-GIS Hub
-
 ## 部署方式1
 
 ```js
@@ -9,7 +5,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig(({ mode }) => {
   return {
-    base: mode === 'production' ? '/gis-hub/' : './',
+    base: mode === 'production' ? '/gis-vue/' : './',
     resolve: {
       alias: {
         '@': './src',
@@ -24,7 +20,7 @@ export default defineConfig(({ mode }) => {
 });
 ```
 
-```script
+```sh
 npm install gh-pages -D
 
 npm run build

@@ -17,19 +17,16 @@ jobs:
         with:
           node-version: '24.16.0'
 
-      # ✅ 最可靠的方式：用npm全局安装pnpm并手动添加路径
       - name: Install PNPM globally
         run: |
           npm install -g pnpm@11.6.0
           echo "PATH=$(npm prefix -g)/bin:$PATH" >> $GITHUB_ENV
 
-      # ✅ 验证pnpm是否可用（必加，确保路径生效）
       - name: Verify PNPM installation
         run: |
           pnpm --version
           echo "PNPM path: $(which pnpm)"
 
-      # ✅ 手动配置pnpm缓存（避免setup-node的缓存问题）
       - name: Setup PNPM cache
         uses: actions/cache@v5
         with:
