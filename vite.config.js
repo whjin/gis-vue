@@ -7,7 +7,6 @@ import vueDevTools from 'vite-plugin-vue-devtools';
 
 export default defineConfig(({ mode }) => {
   return {
-    base: mode === 'production' ? '/' : './',
     plugins: [vue(), vueJsx(), vueDevTools()],
     resolve: {
       alias: {
@@ -18,6 +17,7 @@ export default defineConfig(({ mode }) => {
       chunkSizeWarningLimit: 1000,
       emptyOutDir: true,
       outDir: 'dist',
+      assetsDir: 'assets',
     },
   };
 });
