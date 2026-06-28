@@ -1,7 +1,3 @@
-# gis-vue
-
-GIS Hub
-
 ## 部署方式1
 
 ```js
@@ -24,7 +20,7 @@ export default defineConfig(({ mode }) => {
 });
 ```
 
-```script
+```sh
 npm install gh-pages -D
 
 npm run build
