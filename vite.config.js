@@ -7,6 +7,7 @@ import vueDevTools from 'vite-plugin-vue-devtools';
 
 export default defineConfig(({ mode }) => {
   return {
+    base: mode === 'production' ? '/' : './',
     plugins: [vue(), vueJsx(), vueDevTools()],
     resolve: {
       alias: {
