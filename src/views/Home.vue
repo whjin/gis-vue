@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1>重新构建gh-pages分支</h1>
+    <h1>首页</h1>
   </div>
 </template>
 
