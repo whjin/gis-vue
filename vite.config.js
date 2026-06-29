@@ -5,17 +5,19 @@ import vue from '@vitejs/plugin-vue';
 import vueJsx from '@vitejs/plugin-vue-jsx';
 import vueDevTools from 'vite-plugin-vue-devtools';
 
-export default defineConfig({
-  base: '/gis-vue/',
-  plugins: [vue(), vueJsx(), vueDevTools()],
-  resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url)),
+export default defineConfig(({ mode }) => {
+  return {
+    base: mode === 'production' ? '/gis-vue/' : './',
+    plugins: [vue(), vueJsx(), vueDevTools()],
+    resolve: {
+      alias: {
+        '@': fileURLToPath(new URL('./src', import.meta.url)),
+      },
     },
-  },
-  build: {
-    chunkSizeWarningLimit: 1000,
-    emptyOutDir: true,
-    outDir: 'dist',
-  },
+    build: {
+      chunkSizeWarningLimit: 1000,
+      emptyOutDir: true,
+      outDir: 'dist',
+    },
+  };
 });

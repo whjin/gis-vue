@@ -27,7 +27,16 @@ npm run build
 npm run deploy
 ```
 
+## 基础配置
+
 `public`文件夹增加 `404.html`
+
+`BASE_URL` 配置
+
+```js
+// .env.production
+VUE_APP_BASE_URL = /gis-vue/;
+```
 
 ## 路由配置
 
