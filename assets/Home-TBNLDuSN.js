@@ -1,0 +1,1 @@
+import{c as e,d as t,h as n}from"./index-BMGeT9kf.js";var r={class:`container`},i={__name:`Home`,setup(i){return(i,a)=>(n(),t(`div`,r,[...a[0]||=[e(`h1`,null,`首页123456`,-1)]]))}};export{i as default};
