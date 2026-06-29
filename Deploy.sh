@@ -51,9 +51,6 @@ fi
 
 git push 
 
-pnpm build
-pnpm deploy
-
 echo "按任意键关闭"
 read -n 1
 
