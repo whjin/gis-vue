@@ -1,1 +1,1 @@
-2026-6-29 07:01:22 feat: 调整 `vite.config.js` 的 `base` 配置
+2026-6-29 10:22:41 deploy: Github Action 成功部署测试
