@@ -49,10 +49,7 @@ else
     git commit -m "$DEFAULT_MESSAGE"
 fi
 
-git push 
-
-pnpm build
-pnpm deploy
+git push
 
 echo "按任意键关闭"
 read -n 1
