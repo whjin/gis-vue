@@ -50,3 +50,4 @@ jobs:
           publish_dir: ./dist
           keep_files: false
           force_orphan: true
+          enable_jekyll: false
