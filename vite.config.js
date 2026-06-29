@@ -6,7 +6,7 @@ import vueJsx from '@vitejs/plugin-vue-jsx';
 import vueDevTools from 'vite-plugin-vue-devtools';
 
 export default defineConfig({
-  publicPath: '/gis-vue/',
+  base: '/gis-vue/',
   plugins: [vue(), vueJsx(), vueDevTools()],
   resolve: {
     alias: {
@@ -17,6 +17,5 @@ export default defineConfig({
     chunkSizeWarningLimit: 1000,
     emptyOutDir: true,
     outDir: 'dist',
-    assetsDir: 'assets',
   },
 });
